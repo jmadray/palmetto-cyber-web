@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" fill="none">
+  <!-- Shield -->
+  <g transform="translate(10, 5)">
+    <defs>
+      <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#2d5a8a"/>
+        <stop offset="100%" stop-color="#1e3a5f"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="1.5" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+    </defs>
+    <!-- Shield shape -->
+    <path d="M55 4 C55 4 100 4 100 4 Q106 4 108 10 L108 55 Q108 85 55 110 Q2 85 2 55 L2 10 Q4 4 10 4 Z" 
+          fill="url(#shieldGrad)" stroke="#5bc0de" stroke-width="1.5" filter="url(#glow)"/>
+    
+    <!-- Palmetto trunk -->
+    <g stroke="white" stroke-width="1.2" fill="none">
+      <path d="M55 88 L55 58" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M50 85 Q55 83 60 85" opacity="0.5"/>
+      <path d="M51 79 Q55 77 59 79" opacity="0.5"/>
+      <path d="M52 73 Q55 71 58 73" opacity="0.5"/>
+    </g>
+    
+    <!-- Palmetto fronds -->
+    <g stroke="white" stroke-width="2" stroke-linecap="round" fill="none">
+      <!-- Center frond -->
+      <path d="M55 58 L55 16"/>
+      <!-- Inner pair -->
+      <path d="M55 58 Q50 40 38 20"/>
+      <path d="M55 58 Q60 40 72 20"/>
+      <!-- Mid pair -->
+      <path d="M55 58 Q42 42 24 28"/>
+      <path d="M55 58 Q68 42 86 28"/>
+      <!-- Outer pair -->
+      <path d="M55 58 Q38 48 16 38"/>
+      <path d="M55 58 Q72 48 94 38"/>
+      <!-- Widest pair -->
+      <path d="M55 58 Q35 52 12 50"/>
+      <path d="M55 58 Q75 52 98 50"/>
+    </g>
+    
+    <!-- Circuit nodes - left side -->
+    <circle cx="22" cy="18" r="2.5" fill="#5bc0de"/>
+    <circle cx="14" cy="26" r="2" fill="#5bc0de"/>
+    <circle cx="30" cy="12" r="2" fill="#5bc0de"/>
+    <path d="M22 18 L14 26 M22 18 L30 12" stroke="#5bc0de" stroke-width="0.8"/>
+    
+    <!-- Circuit nodes - right side -->
+    <circle cx="88" cy="18" r="2.5" fill="#5bc0de"/>
+    <circle cx="96" cy="26" r="2" fill="#5bc0de"/>
+    <circle cx="80" cy="12" r="2" fill="#5bc0de"/>
+    <path d="M88 18 L96 26 M88 18 L80 12" stroke="#5bc0de" stroke-width="0.8"/>
+    
+    <!-- Extra circuit dots at frond tips -->
+    <circle cx="55" cy="14" r="1.5" fill="#5bc0de"/>
+    <circle cx="10" cy="48" r="1.5" fill="#5bc0de"/>
+    <circle cx="100" cy="48" r="1.5" fill="#5bc0de"/>
+  </g>
+  
+  <!-- Text: PALMETTO -->
+  <text x="140" y="55" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" 
+        font-weight="800" font-size="42" fill="#3b82f6" letter-spacing="2">PALMETTO</text>
+  
+  <!-- Text: CYBER DEFENSE -->
+  <text x="140" y="95" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" 
+        font-weight="600" font-size="30" fill="#5bc0de" letter-spacing="4">CYBER DEFENSE</text>
+</svg>

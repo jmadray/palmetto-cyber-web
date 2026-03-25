@@ -161,15 +161,16 @@ p { color: var(--gray-400); }
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--white);
 }
 
-.logo-icon {
-    color: var(--primary);
+.logo-img {
+    height: 44px;
+    width: auto;
+}
+
+.navbar.scrolled .logo-img {
+    height: 38px;
 }
 
 .nav-links {
@@ -629,15 +630,12 @@ p { color: var(--gray-400); }
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: var(--gray-500);
-    font-weight: 600;
-    font-size: 0.9rem;
 }
 
-.footer-logo svg {
-    color: var(--primary);
-    opacity: 0.5;
+.footer-logo-img {
+    height: 32px;
+    width: auto;
+    opacity: 0.6;
 }
 
 .footer p {

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" fill="none">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d5a8a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <path d="M55 4 C55 4 100 4 100 4 Q106 4 108 10 L108 55 Q108 85 55 110 Q2 85 2 55 L2 10 Q4 4 10 4 Z" 
+        fill="url(#sg)" stroke="#5bc0de" stroke-width="2"/>
+  <g stroke="white" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M55 88 L55 58" stroke-width="4.5"/>
+    <path d="M55 58 L55 16"/>
+    <path d="M55 58 Q50 40 38 20"/>
+    <path d="M55 58 Q60 40 72 20"/>
+    <path d="M55 58 Q42 42 24 28"/>
+    <path d="M55 58 Q68 42 86 28"/>
+    <path d="M55 58 Q38 48 16 38"/>
+    <path d="M55 58 Q72 48 94 38"/>
+    <path d="M55 58 Q35 52 12 50"/>
+    <path d="M55 58 Q75 52 98 50"/>
+  </g>
+  <circle cx="22" cy="18" r="3" fill="#5bc0de"/>
+  <circle cx="14" cy="28" r="2.5" fill="#5bc0de"/>
+  <circle cx="32" cy="12" r="2.5" fill="#5bc0de"/>
+  <path d="M22 18 L14 28 M22 18 L32 12" stroke="#5bc0de" stroke-width="1.2"/>
+  <circle cx="88" cy="18" r="3" fill="#5bc0de"/>
+  <circle cx="96" cy="28" r="2.5" fill="#5bc0de"/>
+  <circle cx="78" cy="12" r="2.5" fill="#5bc0de"/>
+  <path d="M88 18 L96 28 M88 18 L78 12" stroke="#5bc0de" stroke-width="1.2"/>
+  <circle cx="55" cy="14" r="2" fill="#5bc0de"/>
+  <circle cx="10" cy="48" r="2" fill="#5bc0de"/>
+  <circle cx="100" cy="48" r="2" fill="#5bc0de"/>
+</svg>
