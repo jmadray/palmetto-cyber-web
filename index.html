@@ -8,69 +8,174 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <span class="logo-icon">🛡️</span>
+                <span class="logo-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9,12 11,14 15,10"/>
+                    </svg>
+                </span>
                 <span class="logo-text">Palmetto Cyber Defense</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#services">Services</a></li>
+                <li><a href="#how-we-work">Process</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="btn btn-nav">Get Protected</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Hero -->
     <header class="hero">
-        <div class="container">
-            <h1>Cybersecurity That Actually Makes Sense</h1>
-            <p class="hero-subtitle">No jargon. No scare tactics. Just solid protection for your business.</p>
-            <a href="#contact" class="btn btn-primary">Let's Talk Security</a>
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-badge animate-on-scroll">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="4 17 10 11 4 5"/>
+                    <line x1="12" y1="19" x2="20" y2="19"/>
+                </svg>
+                South Carolina's Cybersecurity Partner
+            </div>
+            <h1 class="animate-on-scroll">Cybersecurity That <br class="hero-br">Actually <span class="gradient-text">Makes Sense</span></h1>
+            <p class="hero-subtitle animate-on-scroll">No jargon. No scare tactics. Just solid protection for your business.</p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#contact" class="btn btn-primary">
+                    Let's Talk Security
+                </a>
+                <a href="#services" class="btn btn-ghost">
+                    See Our Services
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
+    <!-- Trust Stats Band -->
+    <section class="trust-band" aria-label="Trust indicators">
+        <div class="container">
+            <p class="trust-label">Trusted by businesses across South Carolina</p>
+            <div class="trust-stats">
+                <div class="trust-stat animate-on-scroll">
+                    <div class="stat-number">13+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="trust-divider" aria-hidden="true"></div>
+                <div class="trust-stat animate-on-scroll">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Investigations</div>
+                </div>
+                <div class="trust-divider" aria-hidden="true"></div>
+                <div class="trust-stat animate-on-scroll">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Active Monitoring</div>
+                </div>
+                <div class="trust-divider" aria-hidden="true"></div>
+                <div class="trust-stat animate-on-scroll">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Long-Term Contracts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
-            <h2>What We Do</h2>
-            <p class="section-subtitle">Enterprise-grade protection without the enterprise price tag</p>
-            
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">What We Do</span>
+                <h2>Enterprise-Grade Protection</h2>
+                <p class="section-subtitle">Without the enterprise price tag</p>
+            </div>
+
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔍</div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </div>
                     <h3>Security Assessments</h3>
                     <p>Find out where you're vulnerable before the bad guys do. We'll give you a clear, prioritized action plan—not a 200-page report that collects dust.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎣</div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                            <line x1="12" y1="16" x2="12" y2="20"/>
+                            <line x1="10" y1="18" x2="14" y2="18"/>
+                        </svg>
+                    </div>
                     <h3>Phishing Protection</h3>
                     <p>Your employees are your biggest risk—and your best defense. We train them to spot attacks and set up systems to catch what slips through.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🖥️</div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
                     <h3>Endpoint Security</h3>
                     <p>Every laptop, phone, and tablet is a potential entry point. We lock them down with modern protection that doesn't slow your team down.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🚨</div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
                     <h3>Incident Response</h3>
                     <p>When something goes wrong—and eventually something will—you need someone who's been there. We'll get you back on your feet fast.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                            <line x1="9" y1="12" x2="15" y2="12"/>
+                            <line x1="9" y1="16" x2="13" y2="16"/>
+                        </svg>
+                    </div>
                     <h3>Compliance Support</h3>
                     <p>HIPAA, PCI, CMMC—alphabet soup that keeps you up at night. We translate requirements into practical steps you can actually implement.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9,12 11,14 15,10"/>
+                        </svg>
+                    </div>
                     <h3>Managed Security</h3>
                     <p>Don't have an IT team? We'll be your security department. Monitoring, updates, and peace of mind—all for a predictable monthly cost.</p>
                 </div>
@@ -78,19 +183,107 @@
         </div>
     </section>
 
+    <!-- How We Work -->
+    <section id="how-we-work" class="how-we-work">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Our Process</span>
+                <h2>How We Work</h2>
+                <p class="section-subtitle">A clear, proven methodology — no black boxes, no surprises</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step animate-on-scroll">
+                    <div class="step-num" aria-hidden="true">01</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/>
+                            <line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                    <h3>Assess</h3>
+                    <p>We start by understanding your business, your risks, and your current security posture. No assumptions—just honest evaluation.</p>
+                </div>
+
+                <div class="process-connector" aria-hidden="true">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none">
+                        <line x1="0" y1="8" x2="36" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <path d="M32 4l8 4-8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="process-step animate-on-scroll">
+                    <div class="step-num" aria-hidden="true">02</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9,12 11,14 15,10"/>
+                        </svg>
+                    </div>
+                    <h3>Protect</h3>
+                    <p>We implement the right defenses for your situation—tools, training, and processes that fit your business and your budget.</p>
+                </div>
+
+                <div class="process-connector" aria-hidden="true">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none">
+                        <line x1="0" y1="8" x2="36" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <path d="M32 4l8 4-8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="process-step animate-on-scroll">
+                    <div class="step-num" aria-hidden="true">03</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Monitor</h3>
+                    <p>Security isn't a one-time fix. We keep watch around the clock—catching threats before they become incidents, keeping your defenses current.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
     <section class="why-us">
         <div class="container">
-            <h2>Why Palmetto?</h2>
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Why Choose Us</span>
+                <h2>Why Palmetto?</h2>
+            </div>
             <div class="why-grid">
-                <div class="why-item">
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                        </svg>
+                    </div>
                     <h3>13+ Years in the Trenches</h3>
                     <p>We've worked incident response, run security operations centers, and led teams protecting high-profile clients. We've seen what works and what doesn't.</p>
                 </div>
-                <div class="why-item">
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
                     <h3>Built for Small Business</h3>
                     <p>Big security firms ignore businesses under 500 employees. We focus on you—the local shop, the growing practice, the family business.</p>
                 </div>
-                <div class="why-item">
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
                     <h3>Plain English</h3>
                     <p>We explain things like a neighbor, not a vendor. You'll understand exactly what we're doing and why it matters.</p>
                 </div>
@@ -98,32 +291,121 @@
         </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <p>Palmetto Cyber Defense was founded with a simple mission: bring real cybersecurity expertise to the businesses that need it most but can afford it least.</p>
-                <p>We're based in South Carolina's Lowcountry, but we work with clients across the state and beyond. Whether you're a medical practice in Charleston, a manufacturer in Greenville, or a family business in a small town, you deserve the same protection as the big corporations.</p>
-                <p>No long-term contracts. No hidden fees. No bullshit.</p>
+            <div class="about-inner animate-on-scroll">
+                <span class="section-label">Our Story</span>
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Palmetto Cyber Defense was founded with a simple mission: bring real cybersecurity expertise to the businesses that need it most but can afford it least.</p>
+                    <p>We're based in South Carolina's Lowcountry, but we work with clients across the state and beyond. Whether you're a medical practice in Charleston, a manufacturer in Greenville, or a family business in a small town, you deserve the same protection as the big corporations.</p>
+                    <p class="about-tagline">No long-term contracts. No hidden fees. No bullshit.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact">
+        <div class="contact-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
         <div class="container">
-            <h2>Let's Secure Your Business</h2>
-            <p class="section-subtitle">Free 30-minute consultation. No pressure, no sales pitch—just honest advice.</p>
-            <div class="contact-info">
-                <a href="mailto:contact@palmettocyber.com" class="btn btn-primary">contact@palmettocyber.com</a>
-                <p class="contact-note">Based in Jamestown, SC • Serving clients everywhere</p>
+            <div class="animate-on-scroll">
+                <span class="section-label">Get in Touch</span>
+                <h2>Let's Secure Your Business</h2>
+                <p class="section-subtitle">Free 30-minute consultation. No pressure, no sales pitch—just honest advice.</p>
+                <div class="contact-actions">
+                    <a href="mailto:contact@palmettocyber.com" class="btn btn-primary">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        contact@palmettocyber.com
+                    </a>
+                    <p class="contact-note">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Based in Jamestown, SC &bull; Serving clients everywhere
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <a href="#" class="footer-logo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9,12 11,14 15,10"/>
+                </svg>
+                Palmetto Cyber Defense
+            </a>
             <p>&copy; 2026 Palmetto Cyber Defense LLC. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Scroll animations via IntersectionObserver
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    // Stagger sibling animations
+                    const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll:not(.visible)');
+                    siblings.forEach((el, idx) => {
+                        setTimeout(() => el.classList.add('visible'), idx * 80);
+                    });
+                    entry.target.classList.add('visible');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => scrollObserver.observe(el));
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('nav-open', isOpen);
+        });
+
+        // Close on nav link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('nav-open');
+            });
+        });
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target) && navLinks.classList.contains('open')) {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('nav-open');
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 30);
+        }, { passive: true });
+    </script>
 </body>
 </html>
